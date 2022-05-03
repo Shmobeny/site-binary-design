@@ -1,0 +1,17 @@
+@use 'components' as comp;
+
+.main-nav {
+  border-bottom: 1px solid comp.$color-bg-alt;
+
+  &__body {
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 430px;
+    height: 60px;
+    font-size: 15px;
+  }
+
+  &__item {
+    text-align: center;
+  }
+}

@@ -1,0 +1,29 @@
+@use 'components' as comp;
+
+.partners {
+  padding: 5.261% 0;
+  background-color: comp.$color-bg-alt-darken;
+  @include comp.set-background("../img/partners/bg.png");
+
+  &__title {
+    margin-bottom: 4.948%;
+    color: comp.$color-bg-main;
+    font-size: 30px;
+    font-weight: lighter;
+    text-align: center;
+  }
+
+  &__logos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 585px;
+    margin: 0 auto;
+  }
+
+  &__item {
+    margin: 10px;
+  }
+}

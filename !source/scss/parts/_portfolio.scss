@@ -1,0 +1,41 @@
+@use 'components' as comp;
+
+.portfolio {
+  padding: 5.5% 15px 60px;
+  background-color: comp.$color-bg-alt;
+
+  &__album {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-top: 5.5%;
+    padding-bottom: 50px;
+  }
+
+  &__item {
+    width: calc(50% - 60px);
+    min-width: 254.6px;
+    min-height: 188px;
+    margin: 0 15px;
+    margin-bottom: 15px;
+    padding-top: 33%; 
+    background-color: comp.$color-bg-portfolio;
+
+    // &:nth-child(2n) {
+    //   margin-left: 20px;
+    // }
+  }
+
+  &__link {
+    margin: 0 auto;
+  }
+}
+
+.portfolio-nav {
+  &__body {
+    max-width: 330px;
+  }
+}

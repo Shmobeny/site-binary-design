@@ -1,0 +1,11 @@
+@mixin animate($property: all, $duration: 300ms, $cubic: ease-in-out, $delay: 1ms) {
+  transition: $property $duration $cubic $delay;
+}
+
+@mixin set-background($img) {
+  background-image: url(#{$img});
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-attachment: fixed;
+}

@@ -1,0 +1,83 @@
+@use '../components/variables' as var;
+@use '../components/mixins' as mix;
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Hind', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Lato', sans-serif;
+  background-color: var.$color-bg-main;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.title {
+  margin-bottom: 35px;
+  color: var.$color-font-main-dark;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 1px;
+    margin: 0 auto;
+    margin-top: 35px;
+    background-color: var.$color-font-main-dark;
+  }
+}
+
+.nav {
+  &__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    // color: var.$color-font-inactive;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  &__item {
+    padding: 0 10px;
+    @include mix.animate(color);
+
+    &:hover {
+      color: var.$color-font-active;
+    }
+  }
+}
+
+.button-read-more {
+  display: block;
+  width: 180px;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+    
+  > a {
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    border: 1px solid var.$color-font-main-dark;
+    @include mix.animate;
+
+    &:hover {
+      color: var.$color-bg-main;
+      background-color: var.$color-font-main-dark;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+@use 'components' as comp;
+
+.footer {
+  margin-top: auto;
+  padding: 2.448% 0;
+  color: comp.$color-bg-main;
+  text-align: center;
+  background-color: comp.$color-bg-alt-darken;
+
+  &__logo {
+
+    > img {
+      margin: 0 auto;
+    }
+  }
+
+  &__nav {
+    color: comp.$color-font-main-light;
+    
+
+    @include comp.animate;
+
+    // &:hover {
+    //   color: comp.$color-bg-main;
+    // }
+  }
+
+  .nav {
+    margin: 40px 0 30px;
+
+    &__body {
+      max-width: 285px;
+      text-transform: none;
+    }
+  }
+
+  &__copyright {
+    color: #6c6c6c;
+  }
+}

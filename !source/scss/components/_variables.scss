@@ -1,0 +1,12 @@
+//colors
+//backgrounds
+$color-bg-main: #ffffff;
+$color-bg-alt: darken($color-bg-main, 5%);
+$color-bg-portfolio: darken($color-bg-alt, 3%);
+$color-bg-alt-darken: darken($color-bg-main, 76.6%);
+
+//fonts
+$color-font-main-light: #868585;
+$color-font-main-dark: #000000;
+$color-font-inactive: #3c3c3c;
+$color-font-active: #ada074;
